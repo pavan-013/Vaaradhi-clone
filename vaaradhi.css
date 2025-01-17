@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.vf{
+    height: auto;
+    display: grid;
+    grid-template-columns:auto ;
+    grid-template-rows: auto;
+    width: 100%;
+}
+.msg{
+    background-color: rgb(47, 97, 47);
+    color: white;
+    padding: 3px 0 15px 0;
+
+}
+.marquee {
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+} 
+.marquee div {
+    display: block;
+    width: 200%;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 18s linear infinite;
+} 
+.marquee span {
+    /* float: left; */
+    width: 100%;
+} 
+@keyframes marquee {
+    0% { left: 0; }
+    25%{left: -25%;}
+    50% { left: -50%; }
+    75%{left: -75%;}
+    100%{left: -100%;}
+}
+span>p{
+    justify-content: center;
+    align-items: center ;
+    display: inline-block;
+    line-height: 10px;
+    font-size:15px;
+    font-weight:bold;   
+    font-family: 'Courier New', Courier, monospace;
+}
+span>i{
+    justify-content: center;
+    align-items: center ;
+    display: inline-block;
+    padding-inline-end: 60px;
+    padding-inline-start: 60px;
+    padding-block-end: 10px;
+    font-size:15px;
+}
+header{
+    height:150px;
+    width: 100%;
+    background-color: #ffc900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin-left: 30px;
+}
+nav>.container>button{
+    border: 0;
+    position: sticky;
+}
+.main_logo>a>img{
+    height: 110px;
+    width: 180px;
+}
+.carts{
+    margin-right: 30px;
+} 
+.carts>img{
+    padding: 10px;
+}  
+#adimage{   
+    transform: normal;
+    transition:0.01s;
+}
+#itemss{
+    margin: 60px 0px 70px 0px;
+
+}
+#itemss>h1{
+    font-weight: bold;
+    margin-left: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+#item-cards{
+    padding: 20px;
+}
+.cols{
+    padding: 2rem;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 1rem -1rem 1rem -1rem black;
+}
+.card-text,.card-title{
+    text-align: center;
+}
+#cradanther1>img:hover{
+    content: url("https://vaaradhifarms.com/cdn/shop/files/Honey2.png?v=1698854744&width=400");
+}
+#cradanther2>img:hover{
+    content: url("https://vaaradhifarms.com/cdn/shop/files/nazmul1988_cashew_nuts_86146f47-1350-4b10-9605-3a13465811c4.png?v=1714074548&width=400");
+}
+.camp>h3{
+    position:relative;
+    bottom: 256px;
+    text-align: center;
+    color:#ffffff;
+    text-shadow: 5px 5px 5px  #000000;
+    font-weight:600;
+    font-size: xx-large;
+}
+.foodmsg{
+    background-color:#026c02;
+    text-align: center;
+    padding-top: 13px;
+    margin-left: 110px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+}
+section>div>details{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 50px;
+}
+summary,p{
+    padding: 15px;
+}
+summary:hover{
+    border-bottom:2px solid #000000;
+}
+.prduct1>img{
+    padding: 10px;
+    border-radius: 5%;
+    margin-left: 10px;
+}
